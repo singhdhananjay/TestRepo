@@ -1,5 +1,6 @@
-class Person(Exception): 
+class Person(): 
     print(__name__)  
+    
     def __init__(self, firstName, LastName):
         self.Name= firstName
         self.Last=LastName

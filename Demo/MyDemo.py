@@ -5,6 +5,8 @@ try:
   print("Try")
   raise Exception("Error has occure")
 except Exception as error:
-  pass
+  print("error")
 else:
   print("what the heck is this")
+finally:
+  print("lol")

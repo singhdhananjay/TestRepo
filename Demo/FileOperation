@@ -1,0 +1,15 @@
+import os, shutil
+#from contextlib import contextmanager
+
+fileDir = os.path.abspath(".")
+
+#Write
+myFile= open(fileDir + os.path.join(r".\testfile.txt"), "a")
+myFile.write("Next Line \n")
+myFile.close()
+#read
+with open(fileDir + os.path.join(r".\testfile.txt")) as myFile:
+    print(myFile.read())
+    
+
+
