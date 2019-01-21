@@ -1,10 +1,9 @@
 import pprint , os, sys, math, collections, threading
 from math import sin, pi
-
-#data= lambda: 10
-#print(data())
-
 class A(object):
+    def __init__(self):
+        print("default constructor") 
+
     def foo(self,x):
         print("normal : {} {}".format(self,x))
 
@@ -18,14 +17,15 @@ class A(object):
 
     data= lambda x: print(x)
 
-x= A()
-x.foo(10)
-
-A.data("lambda")
-A.class_foo(20)
-A.static_foo(30)
-
 def whattheheck():
     print(whattheheck) 
+
+
+x= A()
+x.foo(10)
+A.class_foo(20)
+A.static_foo(30)
+A.data("lambda")
+
 
 whattheheck()
