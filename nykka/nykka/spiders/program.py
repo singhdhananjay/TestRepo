@@ -4,8 +4,10 @@ class MainSpider(scrapy.Spider):
     name = "nykaa"
     def start_requests(self):
         urls = ['https://www.nykaa.com/']
+        allowed_domains = ['www.nykaa.com']
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
+
     def parse(self, response):
         all_anchors= response.xpath("//a")
         mappingDict ={}

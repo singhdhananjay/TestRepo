@@ -1,3 +1,8 @@
-import json, datetime
-filename = datetime.datetime.now().strftime("%d-%m-%Y %H-%M-%S") + 'nykaaMainPageLinks.txt'  
-print(filename)
+from datetime import datetime  
+from datetime import timedelta 
+import numpy as np
+
+vector = np.eye(10)
+
+
+print(vector)
